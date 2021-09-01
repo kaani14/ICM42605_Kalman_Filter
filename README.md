@@ -2,7 +2,7 @@
 
 # Description
 
-The project interfaces ICM-42605 with STM32G474CET6. To fuse the data data from gyroscope and accelerometer, Kalman filter has been implemented.
+The project interfaces ICM-42605 with STM32G474CET6. To fuse the data from the gyroscope and the accelerometer, the Kalman filter has been implemented.
 
 # Connections
 
@@ -38,7 +38,7 @@ GND  | ADO
 
 # Results
 
-**Noise Evaluation  of Roll:** The PCB was shaken up and down rapidly and was hit on a surface.
+**Noise Evaluation of Roll:** The PCB was shaken up and down rapidly and was hit on a surface.
 
 * Standard deviation of accelerometer when computing roll: 5.02°
 
@@ -49,3 +49,10 @@ GND  | ADO
 * Standard deviation of accelerometer when computing pitch: 5.29°
 
 * Standard deviation of accelerometer when computing pitch: 3.52°
+
+# Tuning Kalman Filter
+
+
+* Measurement noise matrix: The matrix is composed of running variance of the last 100 values of pitch and roll. The number of values can be changed in main.cpp
+
+* Process noise covariance matrix: Decreasing the elements of this matrix, results in better noise filtering, however it slows down the response.
