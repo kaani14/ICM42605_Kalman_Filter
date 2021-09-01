@@ -38,7 +38,7 @@ GND  | ADO
 
 # Results
 
-**Noise Evaluation  of Roll:**
+**Noise Evaluation  of Roll:** The PCB was shaken up and down rapidly and was hit on a surface.
 
 * Standard deviation of accelerometer when computing roll: 5.02°
 
