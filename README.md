@@ -14,11 +14,11 @@ GND  | ADO
 
 # Includes:
 
- ICM42605.h: Configuring ICM42605, reading accelerometer and gyroscope data, computing orientation from the accelerometer and angular velocity from the gyroscope.
+ * ICM42605.h: Configuring ICM42605, reading accelerometer and gyroscope data, computing orientation from the accelerometer and angular velocity from the gyroscope.
  
- Kalman.h: Kamlan Filter implementation, computation of a running variance
- 
- Matrix_math.h: Operator overloading for operations in Kalman.cpp.
+ * Kalman.h: Kamlan Filter implementation, computation of a running variance
+
+ * Matrix_math.h: Operator overloading for operations in Kalman.cpp.
  
  # Kalman Filter Parameters
  
