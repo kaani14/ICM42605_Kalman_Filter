@@ -6,19 +6,19 @@ The project interfaces ICM-42605 with STM32G474CET6. To fuse the data data from 
 
 # Connections
 
-STM32G474CET6  | ICM-42605
+**STM32G474CET6**  | **ICM-42605**
 ------------- | -------------
 PB8  | SCL
 PB9  | SDA
 GND  | ADO
 
-# Includes:
+# Includes
 
- * ICM42605.h: Configuring ICM42605, reading accelerometer and gyroscope data, computing orientation from the accelerometer and angular velocity from the gyroscope.
+ * **ICM42605.h:** Configuring ICM42605, reading accelerometer and gyroscope data, computing orientation from the accelerometer and angular velocity from the gyroscope.
  
- * Kalman.h: Kamlan Filter implementation, computation of a running variance
+ * **Kalman.h:** Kamlan Filter implementation, computation of a running variance
 
- * Matrix_math.h: Operator overloading for operations in Kalman.cpp.
+ * **Matrix_math.h:** Operator overloading for operations in Kalman.cpp.
  
  # Kalman Filter Parameters
  
