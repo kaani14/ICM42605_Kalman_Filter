@@ -6,13 +6,11 @@ The project interfaces ICM-42605 with STM32G474CET6. To fuse the data data from 
 
 # Connections
 
-**STM32G474CET6 -> ICM-42605**
-
-PB8 -> SCL
-
-PB9 -> SDA
-
-GND -> ADO
+STM32G474CET6  | ICM-42605
+------------- | -------------
+PB8  | SCL
+PB9  | SDA
+GND  | ADO
 
 # Includes:
 
