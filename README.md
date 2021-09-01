@@ -24,16 +24,30 @@ GND -> ADO
  
  # Kalman Filter Parameters
  
-Process noise covariance matrix (Q)= {{0.005, 0}, {0, 0.005}};
+* Process noise covariance matrix (Q)= {{0.005, 0}, {0, 0.005}};
 
-State transition matrix (A) = {{1, 0}, {0, 1}};
+* State transition matrix (A) = {{1, 0}, {0, 1}};
 
-Control input matrix, time constant (B) = {{0.004, 0}, {0, 0.004}};
+* Control input matrix, time constant (B) = {{0.004, 0}, {0, 0.004}};
 
-Initial value (x_e) = {{10, 0}, {0, 10}};
+* Initial value (x_e) = {{10, 0}, {0, 10}};
 
-State error variance (p_e) = {{0.10, 0}, {0, 0.10}};
+* State error variance (p_e) = {{0.10, 0}, {0, 0.10}};
 
-Measurement Matrix(H) = {{1, 0}, {0, 1}};
+* Measurement Matrix(H) = {{1, 0}, {0, 1}};
 
-Measurement noise matrix (R) = {{Running variance of the last 100 values of pitch, 0},{0, Running variance of the last 100 values of Roll}}
+* Measurement noise matrix (R) = {{Running variance of the last 100 values of pitch, 0},{0, Running variance of the last 100 values of Roll}}
+
+# Results
+
+**Noise Evaluation  of Roll:**
+
+* Standard deviation of accelerometer when computing roll: 5.02°
+
+* Standard deviation of accelerometer when computing roll: 3.05° 
+
+**Noise Evaluation of Roll:**
+
+* Standard deviation of accelerometer when computing pitch: 5.29°
+
+* Standard deviation of accelerometer when computing pitch: 3.52°
