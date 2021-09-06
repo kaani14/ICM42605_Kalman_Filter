@@ -2,11 +2,11 @@
 
 # Description
 
-The project interfaces ICM-42605 with STM32G474CET6. To fuse the data from the gyroscope and the accelerometer, the Kalman filter has been implemented.
+The project interfaces ICM-42605 with STM32G473CET6. To fuse the data from the gyroscope and the accelerometer, the Kalman filter has been implemented.
 
 # Connections
 
-**STM32G474CET6**  | **ICM-42605**
+**STM32G473CET6**  | **ICM-42605**
 ------------- | -------------
 PB8  | SCL
 PB9  | SDA
